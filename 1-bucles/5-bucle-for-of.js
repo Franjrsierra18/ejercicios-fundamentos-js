@@ -32,4 +32,14 @@ let gente = [{
         nombre: 'Jenny',
         edad: 10
     },
-]
+];
+
+var jotas = [];
+
+for (var i = 0; i < gente.length; i++) {
+    if (gente[i].nombre[0] == 'J') {
+        jotas.push(gente[i].nombre);
+    };
+};
+
+console.log(jotas);

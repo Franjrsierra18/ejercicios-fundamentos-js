@@ -31,5 +31,15 @@ let gente = [{
         nombre: 'Jenny',
         edad: 10
     },
-]
+];
+
+var cuatro = [];
+
+for (var i = 0; i < gente.length; i++) {
+    if (gente[i].nombre.length == 4) {
+        cuatro.push(gente[i].nombre);
+    };
+};
+
+console.log(cuatro);
 

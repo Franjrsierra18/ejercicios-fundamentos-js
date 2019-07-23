@@ -35,3 +35,12 @@ let gente = [{
     },
 ]
 
+var jotas = [];
+
+for (var i = 0; i < gente.length; i++) {
+    if (gente[i].nombre[0] == 'J' && gente[i].edad < 40) {
+        jotas.push(gente[i]);
+    };
+};
+
+console.log(jotas);
