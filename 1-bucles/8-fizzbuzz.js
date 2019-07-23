@@ -6,9 +6,15 @@
 var geekshubs = [];
 for (i = 0; i <= 100; i++) {
   geekshubs.push(i);
-  if (geekshubs[i] % 3 == 0){
+  if (geekshubs[i] % 3 === 0 && geekshubs[i] % 5 === 0){
+    geekshubs[i] = 'GEEKSHUBS'
+  } else if (geekshubs[i] % 5 === 0){
+    geekshubs[i] = 'HUBS'
+  } else if (geekshubs[i] % 3 === 0){
     geekshubs[i] = 'GEEKS'
-  } else if ;
+  };
 };
 
-console.log(geekshubs);
+for (var i = 0; i < geekshubs.length; i++) {
+  console.log(geekshubs[i])
+};
