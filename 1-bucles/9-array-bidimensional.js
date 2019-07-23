@@ -7,8 +7,20 @@
 //   ['20','21','22']
 // ];
 
-let matriz = [
+var matriz = [
     [],
     [],
     []
-]
+];
+
+for (var i = 0; i < matriz.length; i++) {
+  var filaCubo = matriz[i];
+  filaCubo.push(i);
+  filaCubo.push(i);
+  filaCubo.push(i);
+  for (var r = 0; r < filaCubo.length; r++) {
+    filaCubo[r] += r.toString();
+  };
+};
+console.log(matriz);
+

@@ -4,7 +4,7 @@
 // y los múltiplos de 5 imprima HUBS.
 // Además los múltiplos de 3 y 5 ha de imprimir GEEKSHUBS
 var geekshubs = [];
-for (i = 0; i <= 100; i++) {
+for (var i = 0; i <= 100; i++) {
   geekshubs.push(i);
   if (geekshubs[i] % 3 === 0 && geekshubs[i] % 5 === 0){
     geekshubs[i] = 'GEEKSHUBS'
