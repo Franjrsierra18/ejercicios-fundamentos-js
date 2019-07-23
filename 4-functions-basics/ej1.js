@@ -8,11 +8,14 @@
 
 let duplicaNumero = (numero) => {
     // Aquí tu código.  Desde aquí:
-   
-
-
+    var noNumero = 'Debo ser ejecutada con un numero';
+    var devolucion = numero * 2;
+    if (isNaN(devolucion)) {
+      return noNumero;
+    }
+    return devolucion;
     // Hasta aquí.
-}
+};
 
 let test = require('../test.js');
 
