@@ -10,9 +10,14 @@
 
 let ultimoCaracter = (texto) => {
     // Aquí tu código.  Desde aquí:
-  
-
-
+    if (isNaN(texto) == true ) {
+      var newstr = texto[texto.length - 1];
+      return newstr;
+    } else if (texto == ''){
+      return 'Debo ser ejecutada con un string no vacío';
+    } else {
+      return 'Debo ser ejecutada con un string'
+    };
     // Hasta aquí.
 }
 

@@ -7,8 +7,14 @@
 // Ha de pasar los test adjuntados.
 let convierteString = (numero) => {
     // Aquí tu código.  Desde aquí:
-
-    
+    if (numero == undefined) {
+      return 'Debo ser ejecutada con un numero';
+    };
+    var recibeNum = numero.toString();
+    if (typeof(numero) != "number") {
+      return 'Debo ser ejecutada con un numero';
+    };
+    return recibeNum;
     // Hasta aquí.
 }
 
