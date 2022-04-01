@@ -19,6 +19,16 @@
 
 function songsOfArtist(songs, artistName){
     //Your code goes here
+    let arrNames = [];
+    if (songs.length > 0) {
+        for (const single of songs) {
+            if (single.artist === artistName) {
+                arrNames.push(single.song);
+            }
+        }
+    }
+
+    return arrNames;
 }
 
 let test = require('../test.js');

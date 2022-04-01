@@ -4,6 +4,14 @@
 
 function namesOnly(persons){
     // your code here
+    let arrNames = [];
+    if (persons.length > 0) {
+        for (const person of persons) {
+            arrNames.push(person.name);
+        }
+    }
+
+    return arrNames;
 }
 
 

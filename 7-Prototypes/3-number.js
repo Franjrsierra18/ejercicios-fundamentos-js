@@ -5,6 +5,12 @@
 
 let getPrecioMostrar = (precio) => {
     // Aquí tu código.  Desde aquí:
+    if (typeof precio === 'number') {
+        let result = parseFloat(precio).toFixed(2) + ' €';
+        return result;
+    } else {
+        return 'no es un formato correcto';
+    }
     // Hasta aquí
 }
 

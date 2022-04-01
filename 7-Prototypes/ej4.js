@@ -6,6 +6,16 @@
 
 function makeStringsWhoCanAccess(persons){
     // your code here
+    let arrNames = [];
+    if (persons.length > 0) {
+        for (const person of persons) {
+            if (person.age >= 18) {
+                arrNames.push(person.name);
+            }
+        }
+    }
+
+    return arrNames;
 }
 
 let test = require('../test.js');

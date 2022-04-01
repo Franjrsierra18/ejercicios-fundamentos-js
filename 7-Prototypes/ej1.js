@@ -4,6 +4,13 @@
 
 function fiveAndGreaterOnly(numbers) {
     // your code here
+    let arrGraterThanFive = [];
+
+    for (const num of numbers) {
+        num >= 5 ? arrGraterThanFive.push(num) : '';
+    }
+
+    return arrGraterThanFive;
 }
 
 

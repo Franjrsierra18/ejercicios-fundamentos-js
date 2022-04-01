@@ -5,6 +5,13 @@
 
 let esPalindromo= (palabra) => {
     // Aquí tu código.  Desde aquí:
+    if (palabra && typeof palabra === 'string') {
+        let reversePalabra = palabra.split('').reverse().join('');
+        const result = palabra === reversePalabra;
+        return result;
+    } else {
+        return 'no es un formato correcto'
+    }
     //Hasta aqui.
 }
 

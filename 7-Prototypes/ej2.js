@@ -3,6 +3,14 @@
 
 function stringItUp(numbers){
     // your code here
+    let arrStrings = [];
+    if (numbers.length > 0) {
+        for (const num of numbers) {
+            arrStrings.push(num + '');
+        }
+    }
+
+    return arrStrings;
 }
 
 
